@@ -1,0 +1,180 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #2B2D42;
+    background-color: #ccc;
+}
+
+.container{
+    padding: 50px 20%;
+    height: 100vh;
+}
+
+/* HEADER SECTION */
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-pic{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.title{
+    font-size: 60px;
+    font-weight: lighter;
+    line-height: 1.05;
+    margin-bottom: 10px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.subtitle{
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+
+/* CONTACT SECTION */
+.contact-section{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+a.icon{
+    text-decoration: none;
+    color: #2B2D42;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+a.icon:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: translateY(-5px);
+}
+
+.mail{
+    font-style: italic;
+    font-size: 15px;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #ccc, #2B2D42, #ccc);
+
+}
+
+/* CARDS SECTION */
+.my-work-title{
+    text-align: center;
+
+    padding-top: 20px;
+}
+
+.project {
+   /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    padding-bottom: 20px;
+    margin: 10px;
+    flex: 1;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+
+.project > h2 > a {
+    text-decoration: none;
+    color: #2B2D42;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.project p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    padding: 20px 5px;
+}
+
+/* MEDIA QUERIES FOR SMALL SCREENS*/
+@media (max-width: 900px ) {
+    .container{
+        padding: 20px 10%;
+        height: 100vh;
+    }
+
+    .header-container{
+        display: inline-block;
+    }
+
+    .my-pic{
+        height: 150px;
+        width: 150px;
+    }
+
+    .title{
+        font-size: 40px;
+    }
+
+    .contact-section{
+        text-align: left;
+    }
+
+    .icons{
+        justify-content: left;
+    }
+
+    a.icon{
+        padding-left: 0;
+        font-size: 12px;
+    }
+
+    .my-work-title{
+        text-align: left;
+    }
+    
+    .project p{
+        font-size: 13px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+}
